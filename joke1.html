@@ -1,0 +1,47 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghost Joke</title>
+<style>
+    Body{
+        background-color: black;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+        img {
+            display: block;
+            margin: auto;
+        }
+        p {
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+        }
+        .punchline {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Joke 1: Deadly Fun</h1>
+    <p>Knock knock.<br>Who's there?<br>Boo.<br>Boo who?</p>
+    <p id="punchline" class="punchline">Don't cry, it's just a joke!</p>
+    <button onclick="revealPunchline()">CLICK ME</button>
+    <img src="ghost.jpeg" alt="A ghost" width="300">
+    <p><a href="index.html">Back to Home</a></p>
+<!--Learned this code in my 3300 Class creates a button on screen to reveal the punchline-->
+    <script>
+        function revealPunchline() {
+            var punchline = document.getElementById("punchline");
+            if (punchline.style.display === "none") {
+                punchline.style.display = "block";
+            } else {
+                punchline.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

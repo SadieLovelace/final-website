@@ -1,0 +1,49 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dad Joke</title>
+<style>
+    Body{
+        background-color: pink;
+        color: skyblue;
+        font-family: 'Times New Roman', Times, serif;
+    }
+        img {
+            display: block;
+            margin: auto;
+        }
+        p {
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+        }
+        .punchline {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+       <!-- Joke 3: Computer old age joke with a reveal button -->
+    <h1>Joke 3: Computer Old Age</h1>
+    <p>What is a computer's first sign of old age?</p>
+    <p id="punchline" class="punchline">Loss of memory.</p>
+    <button onclick="revealPunchline()">Click ME</button>
+    <img src="computer.jpeg" alt="A computer" width="300">
+    <p><a href="index.html">Back to Home</a></p>
+
+    <script>
+        // Function to toggle punchline visibility
+        function revealPunchline() {
+            var punchline = document.getElementById("punchline");
+            if (punchline.style.display === "none") {
+                punchline.style.display = "block";
+            } else {
+                punchline.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

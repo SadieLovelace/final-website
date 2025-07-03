@@ -1,0 +1,49 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dad Joke</title>
+<style>
+    Body{
+        background-color: lightgreen;
+        color: darkgreen;
+        font-family: 'Times New Roman', Times, serif;
+    }
+        img {
+            display: block;
+            margin: auto;
+        }
+        p {
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+        }
+        .punchline {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Joke 2: Dad joke about basketball with a reveal button -->
+    <h1>Joke 2: The Basketball Vacation</h1>
+    <p>Why can't basketball players go on vacation?</p>
+    <p id="punchline" class="punchline">Because they would get called for traveling!</p>
+    <button onclick="revealPunchline()">CLICK ME</button>
+    <img src="basketball.jpeg" alt="A basketball" width="300">
+    <p><a href="index.html">Back to Home</a></p>
+
+    <script>
+        // Function to toggle punchline visibility
+        function revealPunchline() {
+            var punchline = document.getElementById("punchline");
+            if (punchline.style.display === "none") {
+                punchline.style.display = "block";
+            } else {
+                punchline.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
